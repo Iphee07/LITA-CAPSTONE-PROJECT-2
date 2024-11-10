@@ -60,3 +60,60 @@ In this phase of my analysis, the dataset was explored to show:
 - Customer behavioural pattern
 - Subscription types
 - Trend in subscription cancellaions and renewals
+
+### Data Analysis
+- Excel Analysis
+  - Average Subscription Duration
+```Excel
+=AVERAGE(I:I)
+```
+ - Most Popular Subscription Types
+```Excel
+=COUNTIF(D:D,"basic")
+=COUNTIF(D:D,"premium")
+=COUNTIF(D:D,"standard")
+```
+- SQL Queries
+  - Total Customer by Region
+  ```SQL
+  Select Region, count(distinct CustomerID) as total_customers
+  from [dbo].[Customer Data_Project]
+  Group by Region;
+  ```
+  - Top Subscription Type by Customer
+  ```SQL
+  Select top 1 subscriptiontype,
+  Count(CustomerID) as total_customers
+  from [dbo].[Customer Data_Project]
+  Group by subscriptiontype
+  Order by total_customers desc;
+  ```
+  - Average Subscription by Customers
+  ```SQL
+  Select AVG(datediff(day,subscriptionstart,subscriptionend))as AVG_subscription_duration
+  from [dbo].[Customer Data_Project]
+  ```
+  - Total Revenue by Subscription Type
+  ```SQL
+  Select subscriptiontype,
+  Sum(revenue)as total_revenue
+  from [dbo].[Customer Data_Project]
+  group by subscriptiontype
+  ```
+  - Top 3 Region by Subscription Cancellation
+  ```SQL
+  Select top 3 region,
+  Count(CustomerID) as cancellation_count_top3
+  from [dbo].[Customer Data_Project]
+  where Canceled = 1
+  group by Region
+  order by cancellation_count_top3
+  ```
+  - Total Active and Cancelled Subscription
+  ```SQL
+  Select
+  Sum(case when canceled = 1 then 1
+  else 0 end) as total_active
+  from [dbo].[Customer Data_Project]
+
+  
