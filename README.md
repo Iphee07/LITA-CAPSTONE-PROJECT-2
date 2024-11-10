@@ -37,3 +37,12 @@ The dataset contains the following columns:
 - Cancelled: Shows if subscription was cancelled before subscription end
 - Revenue: Revenue generated from each subscription that was purchased
 - Subscription Duration: Duration of each subscription in days, calculated as Subscription End- Subscription Start
+
+### Data Sources
+The primary source of data used here is Customer Data.csv and this is an open source data that can be downloaded from an open source online such as Kaggle or FRED, though this dataset was given by the Incubator Hub(LITA).
+
+### Analytical Tools Used
+The analytical tools used were:
+- MsExcel- this was used for data cleaning and analysis
+- SQL (Structured Query Language)- this was used to query data
+- Power BI- this business intelligence tool was used for data visualization
