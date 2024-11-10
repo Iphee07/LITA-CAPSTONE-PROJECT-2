@@ -115,5 +115,12 @@ In this phase of my analysis, the dataset was explored to show:
   Sum(case when canceled = 1 then 1
   else 0 end) as total_active
   from [dbo].[Customer Data_Project]
+  ```
+  ### Data Visualization
+  ![CUSTOMER PIVOT TABLE](https://github.com/user-attachments/assets/f24ebcf9-6c63-42c4-8d5c-01be147aa905)
 
+  
+![CUSTOMER POWER BI](https://github.com/user-attachments/assets/42b6249b-5e4f-4130-b78f-bb2238638627)
+
+### Insights
   
