@@ -5,7 +5,7 @@
 ### Table of Contents
 [Project Overview](#project-overview)
 
-[Datast](#dataset)
+[Dataset](#dataset)
 
 [Data Sources](#data-sources)
 
@@ -46,3 +46,17 @@ The analytical tools used were:
 - MsExcel- this was used for data cleaning and analysis
 - SQL (Structured Query Language)- this was used to query data
 - Power BI- this business intelligence tool was used for data visualization
+
+### Data Cleaning
+In this phase of my analysis, the following actions were taken:
+- Data Loading: Loaded the dataset
+- Blank Value Check: Verified the dataset for blank values
+- Data Type Conversion: Converted specified columns to text format for consistency
+- Data Standardization: Reformatted date columns to YYYY-MM-DD for uniformity
+- Duplicate Removal: Removed duplicate rows to ensure unique records. 41,213 duplicates were found and removed left with 33,787 unique values out of 75,000 records that was given in the dataset.
+
+### Exploratory Data Analysis
+In this phase of my analysis, the dataset was explored to show:
+- Customer behavioural pattern
+- Subscription types
+- Trend in subscription cancellaions and renewals
