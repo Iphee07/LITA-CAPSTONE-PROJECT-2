@@ -28,7 +28,7 @@ This analysis shows customers behaviour towards a subscription type and patterns
 
 ### Dataset
 The dataset contains the following columns:
-- CustomerID: Unique identifier foe each customer
+- CustomerID: Unique identifier for each customer
 - Customer Name: Name of each customer who subscribed
 - Region: Geographical area where the subscription order was made
 - Subscription Type: The subscription plan the customer is subscribed to
